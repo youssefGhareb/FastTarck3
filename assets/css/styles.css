@@ -24,6 +24,17 @@ body{
     flex-direction: column;
     gap: 20px;
     border-radius: 10px;
+    position: relative;
+}
+
+.quotes-img{
+    position: absolute;
+    height: auto;
+    width: 139px;
+    z-index: 1;
+    left: 370px;
+    top: -6px;
+    opacity: 0.2;
 }
 
 .item-header{
@@ -53,9 +64,17 @@ body{
     color: #fff;
     font-size: 15px;
     font-weight: 600;
+    z-index: 10;
 }
 
 .item-caption{
     color: #b282f2;
     font-size: 15px;
+    z-index: 10;
+}
+
+@media only screen and (max-width: 600px) {
+  .container{
+    grid-template-columns: 1fr;
+  }
 }
